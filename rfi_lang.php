@@ -1,3 +1,3 @@
 <?php
-    echo $_SERVER["SERVER_NAME"]; ?>';
+    echo file_get_contents("index.php");
 ?>
